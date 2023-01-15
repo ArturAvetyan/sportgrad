@@ -1,0 +1,31 @@
+@import 'base/mixins';
+@import 'base/variables';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Shippori Mincho', serif;
+}
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+    
+@import 'blocks/benifits';
+@import 'blocks/button';
+@import 'blocks/carousel';
+@import 'blocks/consultation';
+@import 'blocks/footer';
+@import 'blocks/forms';
+@import 'blocks/header';
+@import 'blocks/info';
+@import 'blocks/menumobile';
+@import 'blocks/modal';
+@import 'blocks/pageup';
+@import 'blocks/policy';
+@import 'blocks/review';
+@import 'blocks/title';
+@import 'blocks/media';
+
+

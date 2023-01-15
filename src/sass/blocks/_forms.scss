@@ -1,0 +1,37 @@
+.feed-form {
+	margin-top: 36px;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	input {
+		background: #fff;
+		height: 50px;
+		border-radius: 5px;
+		margin-bottom: 15px; 
+		border: none;
+		padding: 0 20px;
+		font-size: 14px;
+		font-weight: 300; 
+		-ms-flex-align: center;
+		align-items: center;
+		color: #4b4b4b;
+		&:nth-child(3) {
+			margin-bottom: 20px;
+	   }
+	}
+		
+	&__triggers {
+		grid-template-columns: 300px 800px;
+		display: grid;
+		-webkit-column-gap: 10px;
+		-moz-column-gap: 10px;
+		column-gap: 10px;
+	}
+	&_contract {
+		display: grid;
+		grid-template-columns: 350px 350px 400px;
+		gap: 5px;
+
+	}
+}
+

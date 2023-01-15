@@ -1,0 +1,322 @@
+
+
+@media (max-width: 991px) {
+    .header {
+        .top-panel__left {
+            .contact-block__item {
+                padding: 5px 15px;
+            }
+            .contact-block__item--icon {
+                font-size: 14px;
+            }
+            .contact-block__label {
+                font-size: 12px;
+            }
+            .contact-block__text {
+                font-size: 12px;
+                a {
+                    font-size: 12px;
+                }
+            }
+        } 
+        .top-panel__right {
+            .social-list__header {
+                padding: 0 10px;
+            }
+            .social-list__menu {
+                padding: 0 10px;
+            }
+            .social-list__icon {
+                font-size: 20px;
+            }
+        }
+        .header-top {
+            .menu__link {
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+        .header-top__container {
+            padding: 0 10px 0 10px;
+        }
+        .header-top__logo {
+            width: 180px;
+            margin: 20px 10px;
+        }
+       
+    }
+    .benifits__item {
+       margin: 10px;
+    }
+    .carousel {
+        width: 100%;
+        &-inner {
+            font-size: 24px;
+        }
+        img {
+            width: 100%;
+        }
+        h5 {
+            font-size: 32px;
+        }
+    }
+    .consultation {
+        .container {
+            padding-left: 30px;
+        }
+    }
+ 
+}
+
+@media (max-width: 768px) {
+    .header {
+  
+        .top-panel__left {
+            display: flex;
+		    align-items:flex-start;
+            .contact-block__item {
+                padding: 5px 16px;
+            }
+            .contact-block__item--icon {
+                font-size: 12px;
+            }
+            .contact-block__label {
+                font-size: 12px;
+            }
+            .contact-block__text {
+                font-size: 12px;
+                a {
+                    font-size: 10px;
+                }
+            }
+        } 
+        .top-panel__right {
+            display: none;
+        
+        }
+        .header-top {
+            .menu__list {
+                padding-left: 0px;
+                margin: 0;
+          
+            }
+            .menu__link {
+                font-size: 10px;
+                font-weight: 600;
+              
+            }
+        }
+        .header-top__container {
+            padding: 0 10px 0 10px;
+        }
+        .header-top__logo {
+            width: 180px;
+            margin: 20px 0px;
+        }
+    }
+    .carousel {
+        width: 100%;
+        &-inner {
+            font-size: 24px;
+        }
+        img {
+            width: 100%;
+        }
+        h5 {
+            font-size: 32px;
+        }
+    }
+ 
+    .consultation {
+        padding: 60px 0 60px 0;
+        .container {
+            padding-left: 30px;
+        }
+        h2 {
+            font-size: 30px;
+            color: #fff;
+        }
+        .consultation__descr {
+            color: $main-color;
+            font-weight: 600;
+            font-size: 25px;
+        }
+    }
+    .button_main {
+        width: 200px;
+        height: 30px; 
+        font-size: 10px;
+    }
+    .info {
+        &_docs {
+            &__tab {
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 40px;
+            }
+        }
+    }   
+}
+
+@media (max-width: 576px) {
+
+    .header {
+        background-image: url(../../img/mobile_main_bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        img {
+            width: 100%;
+        }
+        
+        .hamburger {
+            position: absolute;
+            display: flex;
+            right: 10px;
+        }
+        .top-panel {
+            display: block;
+            left: 0;
+            margin-left: 70px;
+            margin-right: 45px;
+            justify-content: space-between;
+            z-index: 89;
+
+        }
+        .top-panel__left {
+            .contact-block__item {
+                display: flex;
+                justify-content:space-around;
+                padding: 10px 10px;
+            }
+            .contact-block__item--icon {
+                font-size: 10px;
+                padding-right: 10px;
+            
+            }
+            .contact-block__icon {
+                padding: 5px;
+            }
+            .contact-block__label {
+                display: none;
+               
+            }
+            .contact-block__text {
+                font-size: 10px;
+                a {
+                    font-size: 10px;
+                }
+            }
+        } 
+    
+        .top-panel__right {
+            display: none;
+        
+        }
+        .header-top {
+     
+            .menu {
+           
+                margin: 0;
+            }
+            .menu__list {
+                position: fixed;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                top: 0;        
+                right: -100%;  
+                width: 30%;
+                height: 100vh;
+                padding: 20px 15px;
+                background-color: rgba(0, 0, 0, .8);
+                transition: 0.6 all;
+                &_active {
+                    right: 0;
+                }
+             
+            }
+    
+            .menu__link {
+                font-size: 8px;
+                font-weight: 400;
+              
+            }
+        }
+        .header-top__container {
+            padding: 5px 5px;
+        }
+        .header-top__logo {
+            width: 80px;
+            margin: 5px 5px 5px 5px;
+          
+        }
+    }
+
+    .header .top-panel__left .contact-block__item--icon .lnr-clock,.header .top-panel__left .contact-block__item--icon .lnr-map-marker,.header .top-panel__left .contact-block__item--icon .lnr-phone-handset {
+        color: #fff;
+        font-size: 16px;
+        margin-right: 0px;
+    }
+    .carousel {
+        width: 100%;
+        &-inner {
+            font-size: 14px;
+        }
+       
+    }
+ 
+    .consultation {
+        padding: 60px 0 60px 0;
+        .container {
+            padding-left: 30px;
+        }
+        h2 {
+            font-size: 20px;
+       
+        }
+        .consultation__descr {
+            
+            font-weight: 600;
+            font-size: 25px;
+        }
+    }
+    .button_main {
+        width: 200px;
+        height: 30px; 
+        font-size: 10px;
+    }
+    .benifits {
+        padding: 20px 0 10px 0;
+        &__wrapper {
+            margin-top: 10px;
+        }
+        .benifits__icon {
+            width: 50px;
+            height: 50px;
+        } 
+        .benifits__subtitle {
+            margin-top: 25px;
+            font-size: 14px;
+        }
+        .title__benifits {
+            font-size: 26px; 
+            line-height: 40px;
+        }
+    }
+    .info {
+        &_docs {
+            &__tab {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 60px;
+            }
+            &__content {
+                margin-top: 30px;
+                justify-content: space-around;
+            }
+        }
+    }  
+}

@@ -1,0 +1,66 @@
+.title {
+	font-weight: 700;
+	font-size: 36px; 
+	line-height: 60px;
+	text-align: center; 
+	color: #f54f15;
+	&__info_docs { 
+		
+		font-weight: 500; 
+		font-size: 40px;
+	}
+	&__info { 
+		font-weight: 500; 
+		font-size: 40px;
+	}
+	&__review {
+		padding-top: 40px;
+		text-transform: uppercase;
+	}
+	&__benifits {
+		color: black;
+	}
+}
+.title_fz14 {
+	font-size: 14px;
+	line-height: 21px;
+}
+.title_fz16 {
+	font-size: 16px;
+	line-height: 24px;
+}
+.title__fz22 {
+	font-size: 20px;
+	line-height: 30px;
+}
+.title_fz36 {
+	font-size: 36px;
+}
+.title_fz48 {
+	font-size: 48px;
+}
+.title__consultation {
+	color: #f54f15;
+	text-transform: uppercase;
+	text-align: left;
+}
+.title__section-subtitle {
+	text-align: center;
+}
+// .title__review {
+// 	padding-top: 40px;
+// 	color: #f54f15;
+// 	text-transform: uppercase;
+// }
+// .title__info { 
+// 	color: #f54f15;
+// 	font-weight: 500; 
+// 	font-size: 40px;
+// 	text-align: center;
+// }
+// .title__info_docs { 
+// 	color: #f54f15;
+// 	font-weight: 500; 
+// 	font-size: 40px;
+// 	text-align: center;
+// }
