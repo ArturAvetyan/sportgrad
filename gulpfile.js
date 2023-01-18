@@ -21,7 +21,7 @@ gulp.task('server', function() {
 gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(rename({suffix: ".min", prefix: ""}))
+        .pipe(rename({suffix: ".min", prefix: ''}))
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("dist/css"))
@@ -30,7 +30,7 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
-    gulp.watch("src/*.html").on("change", gulp.parallel('html'));
+    gulp.watch("src/*.html").on('change', gulp.parallel('html'));
 });
 
 gulp.task('html', function () {
@@ -59,10 +59,15 @@ gulp.task('mailer', function () {
         .pipe(gulp.dest("dist/mailer"));
 });
 
+gulp.task('data', function () {
+    return gulp.src("src/data/**/*")
+        .pipe(gulp.dest("dist/data"));
+});
+
 gulp.task('images', function () {
     return gulp.src("src/img/**/*")
         .pipe(imagemin())
         .pipe(gulp.dest("dist/img"));
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'icons', 'mailer', 'images'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'icons', 'data', 'mailer', 'images'));
