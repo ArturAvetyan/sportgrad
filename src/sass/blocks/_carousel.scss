@@ -1,14 +1,17 @@
 .carousel {
     position: relative;
-    width: 100%;
     margin: 0 auto;
 }
+
 .carousel-inner {
     font-size: 32px;
     h5 {
         color: #f54f15;
         text-transform: uppercase;
         font-size: 42px;
+    }
+    .carousel-item {
+        text-align: center;
     }
 }
 

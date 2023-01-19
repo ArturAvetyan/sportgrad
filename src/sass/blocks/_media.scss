@@ -1,4 +1,9 @@
-
+@media (max-width: 1200px) {
+    .carousel-item {
+        max-width: 100%;
+        text-align: center;
+    }
+}
 
 @media (max-width: 991px) {
     .header {
